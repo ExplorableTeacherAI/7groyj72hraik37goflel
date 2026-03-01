@@ -53,80 +53,98 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode colors */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light mode colors - Recamán Sequence Theme */
+    --background: 210 30% 99%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 189 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 152 76% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 189 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 152 76% 40%;
 
     --radius: 0.75rem;
 
+    /* Recamán-specific colors */
+    --frog-green: 152 76% 40%;
+    --arc-purple: 262 83% 58%;
+    --arc-blue: 217 91% 60%;
+    --arc-orange: 25 95% 53%;
+    --number-line: 215 16% 47%;
+
     /* Custom tokens for light mode */
-    --glass-bg: 0 0% 100% / 0.8;
-    --gradient-primary: linear-gradient(135deg, hsl(189 100% 50%), hsl(270 60% 60%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
-    --shadow-glow: 0 0 30px hsl(189 100% 50% / 0.2);
+    --glass-bg: 0 0% 100% / 0.85;
+    --gradient-primary: linear-gradient(135deg, hsl(152 76% 40%), hsl(262 83% 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(152 76% 95%), hsl(262 83% 95%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 30% 99%), hsl(210 40% 96%));
+    --shadow-glow: 0 0 30px hsl(152 76% 40% / 0.2);
+    --shadow-card: 0 4px 20px hsl(222 47% 11% / 0.08);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Dark mode colors */
-    --background: 230 35% 7%;
+    /* Dark mode colors - Recamán Sequence Theme */
+    --background: 222 47% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 230 30% 10%;
+    --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 230 30% 10%;
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 189 100% 50%;
-    --primary-foreground: 230 35% 7%;
+    --primary: 152 76% 45%;
+    --primary-foreground: 222 47% 8%;
 
-    --secondary: 270 60% 60%;
+    --secondary: 262 83% 65%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 230 25% 15%;
-    --muted-foreground: 217 20% 65%;
+    --muted: 222 30% 18%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 189 100% 50%;
-    --accent-foreground: 230 35% 7%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 230 25% 20%;
-    --input: 230 25% 20%;
-    --ring: 189 100% 50%;
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 152 76% 45%;
+
+    /* Recamán-specific colors */
+    --frog-green: 152 76% 45%;
+    --arc-purple: 262 83% 65%;
+    --arc-blue: 217 91% 65%;
+    --arc-orange: 25 95% 58%;
+    --number-line: 215 20% 65%;
 
     /* Custom tokens for dark mode */
-    --glass-bg: 230 30% 10% / 0.6;
-    --gradient-primary: linear-gradient(135deg, hsl(189 100% 50%), hsl(270 60% 60%));
-    --gradient-subtle: linear-gradient(180deg, hsl(230 35% 7%), hsl(230 30% 10%));
-    --shadow-glow: 0 0 30px hsl(189 100% 50% / 0.3);
+    --glass-bg: 222 47% 11% / 0.7;
+    --gradient-primary: linear-gradient(135deg, hsl(152 76% 45%), hsl(262 83% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(152 76% 15%), hsl(262 83% 15%));
+    --gradient-subtle: linear-gradient(180deg, hsl(222 47% 8%), hsl(222 47% 11%));
+    --shadow-glow: 0 0 30px hsl(152 76% 45% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

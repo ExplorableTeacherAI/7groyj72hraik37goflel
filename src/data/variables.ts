@@ -78,83 +78,106 @@ export interface VariableDefinition {
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
     // ========================================
-    // ADD YOUR VARIABLES HERE
+    // RECAMÁN SEQUENCE LESSON VARIABLES
     // ========================================
 
-    // Uncomment and modify these examples for your lesson:
-
-    /*
-    // ─────────────────────────────────────────
-    // NUMBER - Use with sliders
-    // ─────────────────────────────────────────
-    myValue: {
-        defaultValue: 5,
+    // Section 1: Introduction - Frog animation step
+    introStep: {
+        defaultValue: 0,
         type: 'number',
-        label: 'My Value',
-        description: 'A number that controls something',
-        unit: 'm',           // optional unit display
+        label: 'Introduction Step',
+        description: 'Current step in the intro frog animation',
         min: 0,
         max: 10,
-        step: 0.5,
+        step: 1,
+        color: '#10b981',
     },
 
-    // ─────────────────────────────────────────
-    // TEXT - Free text input
-    // ─────────────────────────────────────────
-    lessonTitle: {
-        defaultValue: 'My Lesson',
-        type: 'text',
-        label: 'Lesson Title',
-        description: 'The title of your lesson',
-        placeholder: 'Enter a title...',
+    // Section 3: Building the sequence - current step number
+    currentStep: {
+        defaultValue: 0,
+        type: 'number',
+        label: 'Current Step',
+        description: 'The current step n in building the sequence',
+        min: 0,
+        max: 20,
+        step: 1,
+        color: '#3b82f6',
     },
 
-    // ─────────────────────────────────────────
-    // SELECT - Dropdown with options
-    // ─────────────────────────────────────────
-    difficulty: {
-        defaultValue: 'medium',
-        type: 'select',
-        label: 'Difficulty',
-        description: 'The difficulty level of the lesson',
-        options: ['easy', 'medium', 'hard', 'expert'],
+    // Section 4: Arc visualization - number of terms to show
+    numTerms: {
+        defaultValue: 10,
+        type: 'number',
+        label: 'Number of Terms',
+        description: 'How many terms of the sequence to display',
+        min: 1,
+        max: 50,
+        step: 1,
+        color: '#8b5cf6',
     },
 
-    // ─────────────────────────────────────────
-    // BOOLEAN - Toggle switch
-    // ─────────────────────────────────────────
-    showHints: {
-        defaultValue: true,
+    // Section 5: Music playback state
+    isPlaying: {
+        defaultValue: false,
         type: 'boolean',
-        label: 'Show Hints',
-        description: 'Toggle to show or hide hints',
+        label: 'Is Playing',
+        description: 'Whether the sequence music is playing',
     },
 
-    // ─────────────────────────────────────────
-    // ARRAY - List of numbers
-    // ─────────────────────────────────────────
-    dataPoints: {
-        defaultValue: [1, 4, 9, 16, 25],
-        type: 'array',
-        label: 'Data Points',
-        description: 'Y-values for plotting a graph',
+    // Section 6: Missing number explorer
+    checkNumber: {
+        defaultValue: 1,
+        type: 'number',
+        label: 'Check Number',
+        description: 'Number to check if it appears in the sequence',
+        min: 1,
+        max: 100,
+        step: 1,
+        color: '#f97316',
     },
 
-    // ─────────────────────────────────────────
-    // OBJECT - Complex structured data
-    // ─────────────────────────────────────────
-    graphSettings: {
-        defaultValue: { 
-            xMin: -10, 
-            xMax: 10, 
-            showGrid: true 
-        },
-        type: 'object',
-        label: 'Graph Settings',
-        description: 'Configuration for the graph display',
-        schema: '{ xMin: number, xMax: number, showGrid: boolean }',
+    // Section 7: Practice questions
+    practiceAnswer1: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Practice Answer 1',
+        description: 'Answer for first practice question',
+        placeholder: '?',
+        correctAnswer: '1',
+        color: '#10b981',
     },
-    */
+
+    practiceAnswer2: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Practice Answer 2',
+        description: 'Answer for second practice question',
+        placeholder: '?',
+        correctAnswer: '3',
+        color: '#10b981',
+    },
+
+    practiceAnswer3: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Practice Answer 3',
+        description: 'Answer for third practice question',
+        placeholder: '?',
+        correctAnswer: '6',
+        color: '#10b981',
+    },
+
+    // Step progress for practice section
+    practiceProgress: {
+        defaultValue: 0,
+        type: 'number',
+        label: 'Practice Progress',
+        description: 'Progress through practice questions',
+        min: 0,
+        max: 3,
+        step: 1,
+    },
 };
 
 /**
