@@ -12,6 +12,8 @@ import { section2Blocks } from "./sections/Section2TheRule";
 import { section3Blocks } from "./sections/Section3BuildingSequence";
 import { section4Blocks } from "./sections/Section4ArcVisualization";
 import { section5Blocks } from "./sections/Section5Music";
+import { section6Blocks } from "./sections/Section6UnsolvedQuestion";
+import { section7Blocks } from "./sections/Section7Practice";
 
 /**
  * Recamán Sequence - An Explorable Explanation
@@ -26,4 +28,6 @@ export const blocks: ReactElement[] = [
     ...section3Blocks,
     ...section4Blocks,
     ...section5Blocks,
+    ...section6Blocks,
+    ...section7Blocks,
 ];
