@@ -9,6 +9,7 @@ initializeVariableColors(variableDefinitions);
 // Import sections
 import { section1Blocks } from "./sections/Section1Introduction";
 import { section2Blocks } from "./sections/Section2TheRule";
+import { section3Blocks } from "./sections/Section3BuildingSequence";
 
 /**
  * Recamán Sequence - An Explorable Explanation
@@ -20,4 +21,5 @@ import { section2Blocks } from "./sections/Section2TheRule";
 export const blocks: ReactElement[] = [
     ...section1Blocks,
     ...section2Blocks,
+    ...section3Blocks,
 ];
